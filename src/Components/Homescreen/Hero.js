@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div
       style={{
-        backgroundColor: "rgba(0, 0, 0, 0.9)",
+        backgroundColor: "black",
         minHeight: "100vh",
       }}
     >

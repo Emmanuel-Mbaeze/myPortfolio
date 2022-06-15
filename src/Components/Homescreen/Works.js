@@ -2,20 +2,37 @@ import React from "react";
 import Card from "./Card";
 import styled from "styled-components";
 import Header from "../Header/Header";
+import Work from "./Work";
 const Works = () => {
   return (
     <>
       <Header />
       <Container>
         <Wrapper>
-          {/* <Card title="ReactJS" />
-          <Card title="NodeJS" />
-          <Card title="MongoDB" />
-          <Card title="Figma" />
-          <Card title="Data Structure" message="good" />
-          {/* <One></One>
-        <One></One>
-        <One></One> */}{" "}
+          <Work
+            pic=" /ss.jpeg"
+            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+            title="stfcreate.herokuapp.com"
+            link="https://stfcreate.herokuapp.com"
+          />
+          <Work
+            pic=" /3.jpg"
+            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+            title="theatre-net.herokuapp.com"
+            link="https://theatre-net.herokuapp.com"
+          />
+          <Work
+            pic=" /ss.jpeg"
+            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+            title="rental--ride.herokuapp.com"
+            link="https://rental--ride.herokuapp.com"
+          />
+          {/* <Work
+            pic=" /ss.jpeg"
+            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+            title="https://rental--ride.herokuapp.com"
+            link="https://stfcreate.herokuapp.com"
+          />  */}
         </Wrapper>
       </Container>
     </>
@@ -45,6 +62,10 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  @media (max-width: 800px) {
+    padding-top: 20px;
+  }
+  /* background-color: red; */
 `;
 const Container = styled.div`
   width: 100%;
@@ -53,5 +74,6 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
   justify-content: center;
 `;

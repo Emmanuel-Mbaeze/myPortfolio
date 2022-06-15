@@ -7,19 +7,24 @@ const Home = () => {
       <Header />
       <Container>
         <Wrapper>
-          <Text>
-            <Main>
-              Hi i'm <span>Emmanuel Mbaeze</span>
-            </Main>
-            <Test>
-              I'am a FULLSTACK ENGINEER ,who's passionate in providing solutions
-              to problems.i develop applications with HTML,CSS and JAVASCRIPT
-              with proficiency in REACTJS, NODEJS and many more
-            </Test>
-          </Text>
           <Pic>
             <img src="/1.jpg" />
           </Pic>
+          <Text>
+            <Main>
+              My name is <span>Emmanuel Mbaeze</span>, <br />
+              i'm a <span>Fullstack developer</span>.
+            </Main>
+            <Test>
+              I'am a <span>Cloud Engineer</span> &
+              <span>Fullstack developer</span>,who's passionate in providing
+              solutions to problems.i develop applications with{" "}
+              <span>HTML</span>,<span>CSS</span> and <span>JAVASCRIPT</span>
+              with proficiency in <span>REACTJS</span> , <span>NODEJS </span>
+              <span>Firebase</span> , <span>Data structures & Algorithm</span>
+              and many more
+            </Test>
+          </Text>
         </Wrapper>
       </Container>
     </div>
@@ -32,19 +37,26 @@ const Main = styled.div`
     font-weight: 600;
     font-size: 24px;
     margin-left: 5px;
+    color: #c38e55;
   }
   text-align: start;
   width: 100%;
-  height: 40%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: start;
+  min-height: 30%;
+  /* background-color: yellowgreen; */
   @media (max-width: 800px) {
     min-height: 10%;
+    text-align: center;
     /* background-color: red; */
+    justify-content: center;
   }
 `;
 const Test = styled.div`
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    /* margin-left: 1px; */
+    color: #c38e55;
+  }
   text-align: start;
   width: 100%;
   min-height: 40%;
@@ -52,12 +64,16 @@ const Test = styled.div`
   font-size: 15px;
   @media (max-width: 800px) {
     min-heights: 30%;
+    text-align: center;
     /* background-color: red; */
   }
 `;
 const Pic = styled.div`
+  @media (max-width: 800px) {
+    height: 70vh;
+  }
   width: 550px;
-  height: 60vh;
+  height: 70vh;
   /* background-color: green; */
   img {
     object-fit: cover;
@@ -67,11 +83,12 @@ const Pic = styled.div`
 `;
 const Text = styled.div`
   @media (max-width: 800px) {
+    text-align: center;
     /* background-color: palegoldenrod; */
-    height: 30vh;
   }
-  width: 400px;
-  height: 40vh;
+  width: 410px;
+
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,15 +98,16 @@ const Text = styled.div`
 const Wrapper = styled.div`
   width: 70%;
   /* height: calc(100vh-70px); */
-  height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  border-radius: 5px;
   justify-content: space-between;
-  /* background-color: thistle; */
+  background-color: rgba(17, 17, 17);
   @media (max-width: 800px) {
     display: flex;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
     justify-content: center;
   }
 `;
@@ -105,3 +123,4 @@ const Container = styled.div`
     padding-top: 70px;
   }
 `;
+// #C38E55
