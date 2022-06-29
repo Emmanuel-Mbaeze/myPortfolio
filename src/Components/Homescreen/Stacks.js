@@ -4,72 +4,69 @@ import styled from "styled-components";
 import Header from "../Header/Header";
 const Stacks = () => {
   return (
-    <>
-      <Header />
-      <Container>
-        <Wrapper>
-          <Card
-            pic="
+    <Container>
+      <Wrapper>
+        <Card
+          pic="
           /logo512.png
           "
-            title="ReactJS"
-          />
-          <Card
-            pic="
+          title="ReactJS"
+        />
+        <Card
+          pic="
           /nodelogo.png
           "
-            title="NodeJS"
-          />
-          <Card
-            pic="
+          title="NodeJS"
+        />
+        <Card
+          pic="
           /mongodb.png
           "
-            title="MongoDB"
-          />
-          <Card
-            pic="
+          title="MongoDB"
+        />
+        <Card
+          pic="
           /Figma-logo.png
           "
-            title="Figma"
-          />
-          <Card
-            pic="
+          title="Figma"
+        />
+        <Card
+          pic="
           /firebase.png
           "
-            title="FireBase"
-          />
-          <Card
-            pic="
+          title="FireBase"
+        />
+        <Card
+          pic="
           /query.svg
           "
-            title="React Query"
-          />
-          <Card
-            pic="
+          title="React Query"
+        />
+        <Card
+          pic="
           /reactredux.jpg
           "
-            title="React Redux"
-          />
-          <Card
-            pic="
+          title="React Redux"
+        />
+        <Card
+          pic="
           /algo.png
           "
-            title="Data Structure"
-            message="good"
-          />
-          <Card
-            pic="
+          title="Data Structure"
+          message="good"
+        />
+        <Card
+          pic="
           /azure.png
           "
-            title="Azure"
-            message="good"
-          />
-          {/* <One></One>
+          title="Azure"
+          message="good"
+        />
+        {/* <One></One>
         <One></One>
         <One></One> */}
-        </Wrapper>
-      </Container>
-    </>
+      </Wrapper>
+    </Container>
   );
 };
 

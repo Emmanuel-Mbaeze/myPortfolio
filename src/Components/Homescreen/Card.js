@@ -48,7 +48,7 @@ const Image = styled.img`
   }
 `;
 const Hold = styled.div`
-  width: 200px;
+  width: 300px;
   min-height: 180px;
   border-radius: 6px;
   display: flex;

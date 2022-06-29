@@ -20,19 +20,19 @@ const Works = () => {
           link="https://theatre-net.herokuapp.com"
         />
         <Work
-          pic=" /ss.jpeg"
+          pic=" /C8.png"
           message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
           title="rental--ride.herokuapp.com"
           link="https://rental--ride.herokuapp.com"
         />
         <Work
-          pic=" /tailor.jpg"
+          pic=" /book.jpg"
           message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
           title="i-jot.herokuapp.com"
           link="https://i-jot.herokuapp.com"
         />
         <Work
-          pic=" /tailor.jpg"
+          pic=" /upload.png"
           message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
           title="images-uploads.netlify.app"
           link="https://images-uploads.netlify.app"

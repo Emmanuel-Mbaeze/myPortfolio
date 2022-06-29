@@ -57,7 +57,7 @@ const Icons = styled.div`
   font-weight: bolder;
   display: none;
   cursor: pointer;
-  @media (max-width: 900px) {
+  @media (max-width: 830px) {
     display: block;
   }
 `;
