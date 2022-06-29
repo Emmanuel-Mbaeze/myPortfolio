@@ -10,12 +10,8 @@ const Home = () => {
           <Holder>
             <Up>
               {/* <Hold> */}
-              My name is
-              <br />
-              <span>Emmanuel Mbaeze</span>
-              {/* </Hold> */}
-              <br />
-              i'm a <br /> <span>Fullstack developer</span>.
+              My name is <span>Emmanuel Mbaeze</span> i'm a{" "}
+              <span>Fullstack developer</span>.
             </Up>
             <MIddle>
               I'm a Cloud Engineer and Fullstack developer who's passionate in
@@ -80,25 +76,25 @@ const MIddle = styled.div`
     font-size: 22px;
     /* opacity: 1; */
   }
-  margin-top: 55px;
+  margin-top: 20px;
   font: bold;
   /* font-size: 13px; */
   /* font-size: 70px; */
   /* opacity: 0.5; */
   color: #aaaa;
-  /* background-color: blue; */
+  // background-color: blue;
 `;
 
 const Up = styled.div`
-  width: 600px;
+  width: 437px;
   min-height: 18vh;
+  // background-color: pink;
+
   @media (max-width: 768px) {
     text-align: center;
-    width: 100%;
+    width: 70%;
     font-size: 22px;
     margin-top: 15px;
-
-    /* background-color: pink; */
   }
   font-weight: bold;
   font-size: 22px;
@@ -114,7 +110,7 @@ const Right = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-  width: 500px;
+  width: 470px;
   min-height: 71vh;
   display: flex;
   flex-direction: column;
@@ -123,7 +119,7 @@ const Right = styled.div`
   /* background-color: brown; */
 `;
 const Left = styled.img`
-  width: 550px;
+  width: 520px;
   height: 71vh;
 
   object-fit: cover;
@@ -132,11 +128,12 @@ const Wrapper = styled.div`
   @media (max-width: 768px) {
     width: 97%;
     // padding-bottom: 2px;
-    // background-color: green;
   }
   width: 80%;
   min-height: 71vh;
   background-color: transparent;
+  // background-color: green;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -147,7 +144,7 @@ const Wrapper = styled.div`
 `;
 const Container = styled.div`
   width: 100%;
-  min-height: 90vh;
+  min-height: 89.8vh;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;

@@ -86,7 +86,7 @@ const One = styled.div`
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 `;
 const Wrapper = styled.div`
-  width: 70%;
+  width: 80%;
   min-height: 80vh;
   /* background-color: rgba(0, 0, 0, 0.1); */
   display: flex;
@@ -101,8 +101,9 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 70px;
+
   justify-content: center;
-  padding-top: 30px;
   @media (max-width: 800px) {
     padding-top: 70px;
   }
