@@ -8,7 +8,7 @@ const Works = () => {
     <Container>
       <Wrapper>
         <Work
-          pic=" /ss.jpeg"
+          pic=" /sss.JPEG"
           message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
           title="stfcreate.herokuapp.com"
           link="https://stfcreate.herokuapp.com"
