@@ -1,126 +1,156 @@
 import React from "react";
-import Header from "../Header/Header";
 import styled from "styled-components";
 const Home = () => {
   return (
-    <div>
-      <Header />
-      <Container>
-        <Wrapper>
-          <Pic>
-            <img src="/1.jpg" />
-          </Pic>
-          <Text>
-            <Main>
-              My name is <span>Emmanuel Mbaeze</span>, <br />
-              i'm a <span>Fullstack developer</span>.
-            </Main>
-            <Test>
-              I'am a <span>Cloud Engineer</span> &
-              <span>Fullstack developer</span>,who's passionate in providing
-              solutions to problems.i develop applications with{" "}
-              <span>HTML</span>,<span>CSS</span> and <span>JAVASCRIPT</span>
-              with proficiency in <span>REACTJS</span> , <span>NODEJS </span>
-              <span>Firebase</span> , <span>Data structures & Algorithm</span>
-              and many more
-            </Test>
-          </Text>
-        </Wrapper>
-      </Container>
-    </div>
+    <Container>
+      <Wrapper>
+        <Left src="/1.jpg" />
+
+        <Right>
+          <Holder>
+            <Up>
+              {/* <Hold> */}
+              My name is
+              <br />
+              <span>Emmanuel Mbaeze</span>
+              {/* </Hold> */}
+              <br />
+              i'm a <br /> <span>Fullstack developer</span>.
+            </Up>
+            <MIddle>
+              I'm a Cloud Engineer and Fullstack developer who's passionate in
+              providing solutions to problems
+            </MIddle>
+            <Down>
+              i develop applications with HTML, CSS and Javascript with
+              proficiency in ReactJS, NodeJS, Firebase, Data structures &
+              Algorithm, Figma, Cloud Computing, React Redux, React Query,
+              MongoDB and many more
+            </Down>
+          </Holder>
+        </Right>
+      </Wrapper>
+    </Container>
   );
 };
 
 export default Home;
-const Main = styled.div`
-  span {
-    font-weight: 600;
-    font-size: 24px;
-    margin-left: 5px;
-    color: #c38e55;
-  }
-  text-align: start;
-  width: 100%;
-  min-height: 30%;
-  /* background-color: yellowgreen; */
-  @media (max-width: 800px) {
-    min-height: 10%;
-    text-align: center;
-    /* background-color: red; */
-    justify-content: center;
-  }
-`;
-const Test = styled.div`
-  span {
-    font-weight: 600;
-    font-size: 14px;
-    /* margin-left: 1px; */
-    color: #c38e55;
-  }
-  text-align: start;
-  width: 100%;
-  min-height: 40%;
-  font-weight: lighter;
-  font-size: 15px;
-  @media (max-width: 800px) {
-    min-heights: 30%;
-    text-align: center;
-    /* background-color: red; */
-  }
-`;
-const Pic = styled.div`
-  @media (max-width: 800px) {
-    height: 70vh;
-  }
-  width: 550px;
-  height: 70vh;
-  /* background-color: green; */
-  img {
-    object-fit: cover;
+const Holder = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100%;
+  }
+  /* background-color: yellow; */
+  width: 490px;
+  color: white;
+`;
+const Down = styled.div`
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+    font-size: 21px;
+    /* background-color: aliceblue; */
+  }
+  span {
+    color: orangered;
+    font-size: 57px;
+    margin-top: -97px;
+    font-size: 19px;
+    /* opacity: 1; */
+  }
+  margin-top: 25px;
+  font: bold;
+  color: #aaaa;
+  /* font-style: 13px; */
+  /* opacity: 0.5; */
+`;
+const MIddle = styled.div`
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 98%;
+    font-size: 21px;
+    margin-top: 30px;
+  }
+  span {
+    color: orangered;
+    font-size: 57px;
+    margin-top: -97px;
+    font-size: 22px;
+    /* opacity: 1; */
+  }
+  margin-top: 55px;
+  font: bold;
+  /* font-size: 13px; */
+  /* font-size: 70px; */
+  /* opacity: 0.5; */
+  color: #aaaa;
+  /* background-color: blue; */
+`;
+
+const Up = styled.div`
+  width: 600px;
+  min-height: 18vh;
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    margin-top: 15px;
+
+    /* background-color: pink; */
+  }
+  font-weight: bold;
+  font-size: 22px;
+  /* text-transform: capitalize; */
+  span {
+    color: orangered;
+    font-size: 57px;
+    margin-top: -97px;
+    font-size: 27px;
   }
 `;
-const Text = styled.div`
-  @media (max-width: 800px) {
-    text-align: center;
-    /* background-color: palegoldenrod; */
+const Right = styled.div`
+  @media (max-width: 768px) {
+    width: 100%;
   }
-  width: 410px;
-
-  height: 30vh;
+  width: 500px;
+  min-height: 71vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
-  justify-content: space-around;
+  justify-content: center;
+  /* background-color: brown; */
+`;
+const Left = styled.img`
+  width: 550px;
+  height: 71vh;
+
+  object-fit: cover;
 `;
 const Wrapper = styled.div`
-  width: 70%;
-  /* height: calc(100vh-70px); */
-  min-height: 70vh;
+  @media (max-width: 768px) {
+    width: 97%;
+    // padding-bottom: 2px;
+    // background-color: green;
+  }
+  width: 80%;
+  min-height: 71vh;
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-radius: 5px;
   justify-content: space-between;
-  background-color: rgba(17, 17, 17);
-  @media (max-width: 800px) {
-    display: flex;
-    /* flex-direction: column-reverse; */
+  @media (max-width: 900px) {
     justify-content: center;
   }
 `;
 const Container = styled.div`
   width: 100%;
-  /* height: calc(100vh-70px); */
-  height: 100vh;
-  background-color: transparent;
+  min-height: 90vh;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
-  @media (max-width: 800px) {
-    padding-top: 70px;
-  }
+  padding-top: 20px;
 `;
-// #C38E55

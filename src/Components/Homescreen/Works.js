@@ -5,37 +5,40 @@ import Header from "../Header/Header";
 import Work from "./Work";
 const Works = () => {
   return (
-    <>
-      <Header />
-      <Container>
-        <Wrapper>
-          <Work
-            pic=" /ss.jpeg"
-            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
-            title="stfcreate.herokuapp.com"
-            link="https://stfcreate.herokuapp.com"
-          />
-          <Work
-            pic=" /3.jpg"
-            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
-            title="theatre-net.herokuapp.com"
-            link="https://theatre-net.herokuapp.com"
-          />
-          <Work
-            pic=" /ss.jpeg"
-            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
-            title="rental--ride.herokuapp.com"
-            link="https://rental--ride.herokuapp.com"
-          />
-          {/* <Work
-            pic=" /ss.jpeg"
-            message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
-            title="https://rental--ride.herokuapp.com"
-            link="https://stfcreate.herokuapp.com"
-          />  */}
-        </Wrapper>
-      </Container>
-    </>
+    <Container>
+      <Wrapper>
+        <Work
+          pic=" /ss.jpeg"
+          message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+          title="stfcreate.herokuapp.com"
+          link="https://stfcreate.herokuapp.com"
+        />
+        <Work
+          pic=" /3.jpg"
+          message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+          title="theatre-net.herokuapp.com"
+          link="https://theatre-net.herokuapp.com"
+        />
+        <Work
+          pic=" /ss.jpeg"
+          message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+          title="rental--ride.herokuapp.com"
+          link="https://rental--ride.herokuapp.com"
+        />
+        <Work
+          pic=" /tailor.jpg"
+          message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+          title="i-jot.herokuapp.com"
+          link="https://i-jot.herokuapp.com"
+        />
+        <Work
+          pic=" /tailor.jpg"
+          message="This is a photography website  where users who needs photographer for events i.e weddings,birthdays and many more can come in,see the pictures taken by a photographer if inpressed with the pictures,then book for the photographer."
+          title="images-uploads.netlify.app"
+          link="https://images-uploads.netlify.app"
+        />
+      </Wrapper>
+    </Container>
   );
 };
 
@@ -55,7 +58,7 @@ const One = styled.div`
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 `;
 const Wrapper = styled.div`
-  width: 70%;
+  width: 80%;
   min-height: 80vh;
   /* background-color: rgba(0, 0, 0, 0.1); */
   display: flex;
@@ -74,6 +77,6 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
+  padding-top: 70px;
   justify-content: center;
 `;

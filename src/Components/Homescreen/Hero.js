@@ -6,7 +6,8 @@ const Hero = () => {
     <div
       style={{
         backgroundColor: "black",
-        minHeight: "100vh",
+        minHeight: "93.5vh",
+        paddingTop: "50px",
       }}
     >
       <Home />

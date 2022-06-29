@@ -75,10 +75,12 @@ import Hero from "./Components/Homescreen/Hero";
 import Home from "./Components/Homescreen/Home";
 import Stacks from "./Components/Homescreen/Stacks";
 import Works from "./Components/Homescreen/Works";
+import Header from "./Components/Header/Header";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/Stacks" element={<Stacks />} />
