@@ -10,7 +10,7 @@ const Home = () => {
           <Holder>
             <Up>
               {/* <Hold> */}
-              My name is <span>Emmanuel Mbaeze</span> i'm a{" "}
+              My name is <span>Emmanuel Mbaeze</span> <br /> i'm a{" "}
               <span>Fullstack developer</span>.
             </Up>
             <MIddle>
@@ -89,12 +89,17 @@ const Up = styled.div`
   width: 437px;
   min-height: 18vh;
   // background-color: pink;
-
   @media (max-width: 768px) {
     text-align: center;
-    width: 70%;
-    font-size: 22px;
+    width: 90%;
+    font-size: 20px;
     margin-top: 15px;
+  }
+  @media (max-width: 375px) {
+    font-size: 24px;
+    width: 100%;
+
+    font-weight: 500;
   }
   font-weight: bold;
   font-size: 22px;
@@ -103,7 +108,7 @@ const Up = styled.div`
     color: orangered;
     font-size: 57px;
     margin-top: -97px;
-    font-size: 27px;
+    font-size: 24px;
   }
 `;
 const Right = styled.div`
@@ -121,8 +126,14 @@ const Right = styled.div`
 const Left = styled.img`
   width: 520px;
   height: 71vh;
-
   object-fit: cover;
+  @media (max-width: 414px) {
+    width: 400px;
+    height: 61vh;
+  }
+  @media (min-width: 320px) and (max-width: 375px) {
+    width: 320px;
+  }
 `;
 const Wrapper = styled.div`
   @media (max-width: 768px) {
