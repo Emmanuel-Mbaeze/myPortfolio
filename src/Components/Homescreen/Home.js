@@ -1,21 +1,45 @@
 import React from "react";
 import styled from "styled-components";
+// import "../../App.css";
+
 const Home = () => {
+  const reveal = () => {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = reveals[i].getBoundingClientRect().top;
+      let revealPoint = 150;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  };
+  window.addEventListener("scroll", reveal);
+
   return (
-    <Container>
+    <Container className="reveal">
       <Wrapper>
-        <Left src="/1.jpg" />
+        <Left src="/x.jpg" />
 
         <Right>
           <Holder>
             <Up>
-              {/* <Hold> */}
               My name is <span>Emmanuel Mbaeze</span> <br /> i'm a{" "}
               <span>Fullstack developer</span>.
             </Up>
             <MIddle>
               I'm a Cloud Engineer and Fullstack developer who's passionate in
               providing solutions to problems
+            </MIddle>
+            <MIddle>
+              I'm aware of how tedios tasks can be and i know i have to align
+              myself with people,it's my desire to work with a team and achieve
+              excellent result in every project.I believe in delivering the best
+              with software technology i'm familiar with.
             </MIddle>
             <Down>
               i develop applications with HTML, CSS and Javascript with
@@ -39,7 +63,7 @@ const Holder = styled.div`
     width: 100%;
   }
   /* background-color: yellow; */
-  width: 490px;
+  width: 100%;
   color: white;
 `;
 const Down = styled.div`
@@ -87,8 +111,10 @@ const MIddle = styled.div`
 
 const Up = styled.div`
   width: 437px;
-  min-height: 18vh;
-  // background-color: pink;
+  min-height: 12vh;
+  /* margin-top: 35px; */
+
+  /* background-color: pink; */
   @media (max-width: 768px) {
     text-align: center;
     width: 90%;
@@ -115,7 +141,11 @@ const Right = styled.div`
   @media (max-width: 768px) {
     width: 100%;
   }
-  width: 470px;
+  @media (max-width: 1224px) {
+    width: 450px;
+    /* background-color: brown; */
+  }
+  width: 450px;
   min-height: 71vh;
   display: flex;
   flex-direction: column;
@@ -134,6 +164,9 @@ const Left = styled.img`
   @media (min-width: 320px) and (max-width: 375px) {
     width: 320px;
   }
+  @media (max-width: 1224px) {
+    width: 470px;
+  }
 `;
 const Wrapper = styled.div`
   @media (max-width: 768px) {
@@ -143,14 +176,17 @@ const Wrapper = styled.div`
   width: 80%;
   min-height: 71vh;
   background-color: transparent;
-  // background-color: green;
+  /* background-color: green; */
 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 900px) {
+  @media (max-width: 1000px) {
     justify-content: center;
+  }
+  @media (max-width: 1024px) {
+    width: 95%;
   }
 `;
 const Container = styled.div`

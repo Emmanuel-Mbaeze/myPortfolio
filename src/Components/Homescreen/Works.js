@@ -3,9 +3,30 @@ import Card from "./Card";
 import styled from "styled-components";
 import Header from "../Header/Header";
 import Work from "./Work";
+// import "../../App.css";
+
 const Works = () => {
+  const reveal = () => {
+    let reveals = document.querySelectorAll(".reveal");
+
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let revealTop = reveals[i].getBoundingClientRect().top;
+      let revealPoint = 150;
+
+      if (revealTop < windowHeight - revealPoint) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  };
+  window.addEventListener("scroll", reveal);
+
   return (
-    <Container>
+    <Container className="reveal">
+      {/* <One>Projects</One> */}
+      <h2>Projects</h2>
       <Wrapper>
         <Work
           pic=" /sss.jpeg"
@@ -45,21 +66,17 @@ const Works = () => {
 export default Works;
 
 const One = styled.div`
-  width: 200px;
-  min-height: 180px;
-  border-radius: 6px;
-  margin: 20px;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  color: orangered;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: poppins;
   background-color: white;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 `;
 const Wrapper = styled.div`
-  width: 80%;
+  width: 90%;
   min-height: 80vh;
+
   /* background-color: rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-wrap: wrap;
@@ -68,15 +85,22 @@ const Wrapper = styled.div`
   @media (max-width: 800px) {
     padding-top: 20px;
   }
-  /* background-color: red; */
 `;
 const Container = styled.div`
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 50px;
   justify-content: center;
+  /* margin: 100px; */
+  h2 {
+    color: orangered;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: poppins;
+  }
 `;

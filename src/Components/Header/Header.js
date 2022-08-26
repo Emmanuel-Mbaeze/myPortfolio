@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import styled from "styled-components";
-const Header = () => {
+const Header = ({ bg }) => {
   return (
     <div>
-      <Container>
+      <Container bg={bg}>
         <Wrapper>
           <Link to="/">
             <Logo src="/2.png" />
@@ -57,7 +57,7 @@ const Icons = styled.div`
   font-weight: bolder;
   display: none;
   cursor: pointer;
-  @media (max-width: 830px) {
+  @media (max-width: 900px) {
     display: block;
   }
 `;
@@ -80,7 +80,7 @@ const Sidebar = styled.div`
   overflow: hidden;
   top: 0;
   left: 0;
-  @media (max-width: 834px) {
+  @media (max-width: 900px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,10 +140,13 @@ const Wrapper = styled.div`
 const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: transparent;
+  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   z-index: 10;
+  background-color: ${({ bg }) => (bg ? "#1234" : "black")};
+  /* background-color: ${({ bc }) => (bc ? "red" : "transperant")}; */
+  /* color: ${({ bc }) => (bc ? "white" : "black")}; */
 `;

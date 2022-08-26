@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-const Card = ({ title, pic }) => {
+const Card = ({ title, pic, hove }) => {
   return (
     <Hold>
       <Image src={pic} />
@@ -38,8 +38,8 @@ const Text = styled.div`
   }
 `;
 const Image = styled.img`
-  width: 200px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: 6px;
   /* background-color: black; */
@@ -48,8 +48,8 @@ const Image = styled.img`
   }
 `;
 const Hold = styled.div`
-  width: 260px;
-  min-height: 180px;
+  width: 200px;
+  height: 120px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@ const Hold = styled.div`
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
   /* background-color: red; */
-  margin: 20px;
+  margin: 10px;
   padding-bottom: 4px;
   @media (max-width: 320px) {
     width: 280px;
