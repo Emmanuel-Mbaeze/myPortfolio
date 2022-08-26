@@ -18,7 +18,7 @@ const Hero = () => {
       <Home />
       <Stacks />
       <Works />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
